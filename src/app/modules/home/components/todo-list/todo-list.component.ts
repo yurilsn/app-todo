@@ -8,10 +8,14 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit{
 
-  taskList: Array<TaskList> = [];
+  taskList: Array<TaskList> = [
+    // {task: 'Task 1', checked: true},
+    // {task: 'Task 2', checked: false},
+
+  ];
 
   ngOnInit(): void { 
-      
+      console.log(!this.taskList.length)
   }
 
 }
